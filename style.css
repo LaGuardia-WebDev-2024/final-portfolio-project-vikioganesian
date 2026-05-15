@@ -32,7 +32,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: rgb(117, 30, 45);
+  background-color: rgb(153, 89, 99);
 }
 
 .active {
@@ -41,4 +41,9 @@ li a:hover:not(.active) {
 
 h1 {
   width: 100%;
+}
+
+#name {
+ float: left;
+
 }
