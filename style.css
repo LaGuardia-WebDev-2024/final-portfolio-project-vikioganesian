@@ -12,7 +12,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #724d4d;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -25,14 +25,14 @@ li {
 
 li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: rgb(153, 89, 99);
+  color: rgb(153, 89, 99);
 }
 
 .active {
@@ -45,5 +45,13 @@ h1 {
 
 #name {
  float: left;
+ 
 
 }
+
+.social:hover:not(.active) {
+  background-color: aquamarine;
+}
+
+
+.portfolioimg 
