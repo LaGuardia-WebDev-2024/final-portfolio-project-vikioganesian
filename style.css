@@ -50,7 +50,7 @@ h1 {
 }
 
 .social:hover:not(.active) {
-  background-color: aquamarine;
+  background-color: rgb(138, 138, 138);
 }
 
 
