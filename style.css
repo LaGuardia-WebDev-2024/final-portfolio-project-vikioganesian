@@ -54,4 +54,13 @@ h1 {
 }
 
 
-.portfolioimg 
+.fade-in {
+        opacity: 0;
+        transform: translateY(30px); /* optional slide-up effect */
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
