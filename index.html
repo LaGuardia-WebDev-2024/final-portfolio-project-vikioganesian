@@ -25,6 +25,23 @@ Select ONE Additional Feature to Add
     <style>
     
       /* Styling Only Related To THIS Page */
+   #horizontal-photo-div {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      #horizontal-photo-div img {
+        height: 380px;
+        width: 550px;
+        object-fit: cover;
+        margin: 20px;
+        opacity: 1;
+      }
+
+
+
       /*~~~~~ Taken From:
       https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
@@ -99,7 +116,13 @@ Select ONE Additional Feature to Add
 <h1 class="fade-in">Viktoriia Oganesian | 2026 </h1>
     <!-- <div class="parallax fade-in"></div> -->
 
-   <div class="textblock parent-flex">
+   
+   
+   
+    <div id="horizontal-photo-div">
+      <div class="image">
+
+    <div class="textblock parent-flex">
       <div class="child-flex para-1">
        <img class="fade-in" src="images/photoon6s.jpeg" width="700
       ">
@@ -110,7 +133,8 @@ Select ONE Additional Feature to Add
         </p>
       </div>
     </div>
-
+      </div>
+    </div>
 
 
    <script>
