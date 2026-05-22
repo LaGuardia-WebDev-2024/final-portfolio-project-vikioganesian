@@ -21,7 +21,23 @@
         
       }
 
+      .container {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row; }
+
+      .box img {
+        height: 380px;
+        width: 550px;
+        object-fit: fill;
+        margin: 20px;
+        opacity: 1;
+      }
+      /* horizontal photos */
       
+
     </style>
   </head>
   <body>
@@ -54,39 +70,49 @@
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>My Art</h1>
 
-    <div class="parent-flex">
+<div class=contaimer> 
+
+    <div class="box">
       <img class="portfolioimg"
         src="images/Painting6.jpg"
       />
+      </div>
+
+      <div class="box">
       <img class="portfolioimg"
         src="images/yogapose.jpeg"
       />
     </div>
 
-    <div class="parent-flex">
+    <div class="box">
       <img class="portfolioimg"
         src="images/ssss.jpeg"
       />
+</div>
+
+      <div class="box">
       <img class="portfolioimg"
         src="images/IMG_3969.jpeg"
       />
+</div>
+
+      <div class="box">
        <img class="portfolioimg"
         src="images/IMG_3968.jpeg"
       />
+</div>
+
+      <div class="box">
  <img class="portfolioimg"
         src="images/Painting 8.jpg"
       />
-
     </div>
 
-<div class="gallery">
-<img src="images/IMG_3968.jpeg" class="art">
-</div>
-  <div id="modal" class="modal">
+  <div class="box">
+<img src="images/photoon6s.jpeg" class="art">
 
-    
+</div> 
   </div>
-
 
   </body>
 </html>
