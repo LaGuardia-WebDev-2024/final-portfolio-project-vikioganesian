@@ -22,16 +22,19 @@
       }
 
       .container {
-        display: flex;
+         display: flex;
         justify-content: center;
         align-content: space-around;
         flex-wrap: wrap;
         flex-direction: row; }
+        
+
+
 
       .box img {
         height: 380px;
         width: 550px;
-        object-fit: fill;
+        object-fit: cover;
         margin: 20px;
         opacity: 1;
       }
@@ -110,9 +113,21 @@
 
   <div class="box">
 <img src="images/photoon6s.jpeg" class="art">
-
 </div> 
+
   </div>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+</script>
+
 
   </body>
 </html>
