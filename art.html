@@ -32,11 +32,11 @@
 
 
       .box img {
-        height: 380px;
-        width: 550px;
-        object-fit: cover;
-        margin: 20px;
-        opacity: 1;
+       width:300px;
+       height: 300;
+       display: flex;
+        object-fit: contain;      /* Crops the image to fill the space without distortion */
+  object-position: center;
       }
       /* horizontal photos */
       
@@ -73,7 +73,7 @@
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>My Art</h1>
 
-<div class=contaimer> 
+<div class=container> 
 
     <div class="box">
       <img class="portfolioimg"
