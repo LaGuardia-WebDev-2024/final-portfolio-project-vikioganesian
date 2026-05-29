@@ -3,9 +3,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+       <style>
+      /* Styling Only Related To THIS Page */
+
+
+       .parallax {
+        /* The image used */
+        background-image: url("");
+       background-color: rgb(179, 179, 179);}
+
+      .parent-flex {
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+      }
+
+      .parent-flex img {
+        width: 150px;
+        padding: 20px;
+      }
+      .child-flex p {
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .link-item {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adds space between the icon and the text word */
+        font-family: sans-serif;}
+
+        .link-item img {
+            width: 150px;
+          
+
+        }
+    </style>
 </head>
 <body>
-    
-    
+        <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="art.html">Art</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contacts.html">Contact me</a></li>
+ <li style="float: right">
+
+     <div class="parent-flex">
+      <div class="child-flex">
+        <img
+          src="images/mesitting.jpeg"
+        />
+      </div>
+
+      <div class="child-flex social-column">
+
+        <div class="link-item">
+             <a target="_blank" href="https://www.instagram.com/insomn1aangel?igsh=cHpwa2QwNjc3Mmph">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png" >
+            </a>  <span>instagram</span>
+        
+        </div>
+
+         <div class="link-item">
+               <a target="_blank" href="https://www.tiktok.com/@lameee636?_r=1&_t=ZT-96M3ZMjL69W">
+            <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-how-use-tiktok-create-cool-videos-with-iphone-14.png" >
+        
+             </a> <span>tiktok</span>
+        </div>
+
+       
+      </div>
+    </div>
+
+    </div>
+
 </body>
 </html>
