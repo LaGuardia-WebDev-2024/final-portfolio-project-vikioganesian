@@ -3,12 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
        <style>
       /* Styling Only Related To THIS Page */
 
 
-       .parallax {
+      .parallax {
         /* The image used */
         background-image: url("");
        background-color: rgb(179, 179, 179);}
@@ -21,10 +22,8 @@
         margin-bottom: 50px;
       }
 
-      .parent-flex img {
-        width: 150px;
-        padding: 20px;
-      }
+       
+     
       .child-flex p {
         padding: 20px;
         margin: 20px;
@@ -39,11 +38,19 @@
         gap: 10px; /* Adds space between the icon and the text word */
         font-family: sans-serif;}
 
-        .link-item img {
-            width: 150px;
-          
 
+        .equalSquare {
+          width: 200px;
+         height: 200px;
+          object-fit: cover;
         }
+
+#mainimg {
+  float: left;
+  width: 400px;
+}
+
+
     </style>
 </head>
 <body>
@@ -57,7 +64,7 @@
 
      <div class="parent-flex">
       <div class="child-flex">
-        <img
+        <img id="mainimg"
           src="images/mesitting.jpeg"
         />
       </div>
@@ -66,14 +73,14 @@
 
         <div class="link-item">
              <a target="_blank" href="https://www.instagram.com/insomn1aangel?igsh=cHpwa2QwNjc3Mmph">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png" >
+            <img class="equalSquare" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png" >
             </a>  <span>instagram</span>
         
         </div>
 
          <div class="link-item">
                <a target="_blank" href="https://www.tiktok.com/@lameee636?_r=1&_t=ZT-96M3ZMjL69W">
-            <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-how-use-tiktok-create-cool-videos-with-iphone-14.png" >
+            <img class="equalSquare" src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-how-use-tiktok-create-cool-videos-with-iphone-14.png" >
         
              </a> <span>tiktok</span>
         </div>
