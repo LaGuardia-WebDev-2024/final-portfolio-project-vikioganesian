@@ -36,7 +36,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: rgb(85, 42, 42);
+  color: rgb(158, 50, 50);
 }
 
 h1 {
@@ -45,6 +45,7 @@ h1 {
 
 #name {
  float: left;
+ color: black;
  
 
 }

@@ -48,8 +48,26 @@
 #mainimg {
   float: left;
   width: 400px;
-}
 
+}
+ .textblock {
+        min-height: 500px;
+        background-color: rgb(255, 201, 201);
+        color: rgb(255, 255, 255);
+      }
+      .parent-flex {
+        display: flex;
+      }
+      .child-flex {
+        background-color: rgb(218, 130, 151);
+        margin: 30px;
+        padding: 10px;
+        text-align: justify;
+      }
+      .para-1{
+        display: flex;
+        align-items: center;
+      }
 
     </style>
 </head>
@@ -58,12 +76,52 @@
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
       <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contacts.html">Contact me</a></li>
+      
+      <li><a class="active" href="contacts.html">Contact me</a></li>
  <li style="float: right">
+  <li style="float: left">
+  <a id="name" >Viki Insomnia</a></li>
+
+
+
+
+
+    <div id="horizontal-photo-div">
+      <div class="image">
+
+    <div class="textblock parent-flex">
+      <div class="child-flex para-1">
+       <img class="fade-in" src="images/mesitting.jpeg" width="500
+      ">
+      </div>
+      <div class="child-flex">
+        <p>
+          artffffefrhdfggdfffffffffffffffffffffffffffff
+        </p>
+      </div>
+    </div>
+      </div>
+    </div>
+
+
+   <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+</script>
+
+
+
+
 
      <div class="parent-flex">
       <div class="child-flex">
+
         <img id="mainimg"
           src="images/mesitting.jpeg"
         />
@@ -80,7 +138,7 @@
 
          <div class="link-item">
                <a target="_blank" href="https://www.tiktok.com/@lameee636?_r=1&_t=ZT-96M3ZMjL69W">
-            <img class="equalSquare" src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-how-use-tiktok-create-cool-videos-with-iphone-14.png" >
+            <img class="equalSquare" src="https://www.citypng.com/public/uploads/preview/tik-tok-logo-transparent-square-701751694793273qftyarldbx.png?v=2026051318" >
         
              </a> <span>tiktok</span>
         </div>
