@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project - Art</title>
+    <title>Viktoriia Oganesian - Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="image/favicon1.png" type="image/x-icon">
     <style>
@@ -68,7 +68,7 @@ margin-bottom: 15px;
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>My Art</h1>
-
+<h3>*not to scale</h3>
 <div class=container> 
 
     <div class="box">
@@ -102,7 +102,7 @@ margin-bottom: 15px;
 </div>
 
       <div class="box">
- <img class="portfolioimg"
+ <img class="portfolioimg" class="fade-in"
         src="images/Painting 8.jpg"
       />
     </div>
@@ -112,6 +112,18 @@ margin-bottom: 15px;
 </div> 
 
   </div>
+
+
+   <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+</script>
 
   
 
