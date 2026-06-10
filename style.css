@@ -80,7 +80,7 @@ cursor: pointer;
     position:absolute;
     inset:0;
     background: rgba(0,0,0,0);
-    color: white;
+
 
     display: flex;
     align-items: center;
@@ -94,6 +94,10 @@ cursor: pointer;
     background: rgba(0,0,0,0.4);
     opacity: 1;
   }
+
+.art-wrapper:hover .text {
+  color: white;
+}
 
   .text {
     align-items: center;
