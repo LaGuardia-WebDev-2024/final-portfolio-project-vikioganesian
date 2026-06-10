@@ -123,13 +123,52 @@ margin-bottom: 15px;
    <script>
   window.addEventListener('DOMContentLoaded', () => {
     const fadeElems = document.querySelectorAll('.fade-in');
-    fadeElems.forEach((el, i) => {
+    items.forEach((el, i) => {
       setTimeout(() => {
         el.classList.add('visible');
-      }, i * 300); 
+      }, i * 200); 
     });
   });
+
+function openModal(el) {
+  const img = el.querySelector("img");
+
+  document.getElementById("modal-img").src = img.src;
+
+  document.getElementById("modal-title").innerText = img.dataset.title;
+  document.getElementById("modal-size").innerText = img.dataset.size;
+  document.getElementById("modal-materials").innerText = img.dataset.materials;
+  document.getElementById("modal-year").innerText = img.dataset.year;
+
+  document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
 </script>
+
+
+
+
+<div id="modal" class="modal" onclick="closeModal()">
+
+<div class="modal-content" onclick="event.stopPropagation()">
+
+<img id="modal-img">
+
+<div class="modal-info">
+<h2 id="modal-title"></h2>
+<p id="modal-size"></p>
+<p id="modal-materials"></p>
+<p id="modal-year"></p>
+
+
+</div>
+
+</div>
+</div>
+
 
   
 
