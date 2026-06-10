@@ -55,13 +55,74 @@ h1 {
 }
 
 
+.box {
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+
+.art-wrapper {
+position: relative;
+cursor: pointer;
+}
+
 .fade-in {
         opacity: 0;
         transform: translateY(30px); /* optional slide-up effect */
         transition: opacity 1.2s ease-out, transform 1.2s ease-out;
       }
 
-      .fade-in.visible {
+ .fade-in.visible {
         opacity: 1;
         transform: translateY(0);
       }
+
+  .overlay {
+    position:absolute;
+    inset:0;
+    background: rgba(0,0,0,0);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: 0.3 ease;
+  }    
+
+  .art-wrapper:hover .overlay {
+    background: rgba(0,0,0,0.4);
+    opacity: 1;
+  }
+
+  .text {
+    align-items: center;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 750px;
+    width: 90%;
+  }
+
+  .modal-content img {
+    width: 50%;
+  }
+
+  .modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
