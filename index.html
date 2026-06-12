@@ -32,7 +32,7 @@ Select ONE Additional Feature to Add
       https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
         /* The image used */
-        background-image: url("");
+       margin: 0;
        background-color: rgb(255, 255, 255);
 
         /* Set a specific height */
@@ -44,24 +44,69 @@ Select ONE Additional Feature to Add
         background-repeat: no-repeat;
         background-size: cover;
       }
-      .textblock {
-        min-height: 500px;
-        background-color: rgb(255, 201, 201);
-        color: rgb(255, 255, 255);
-      }
+     
       .parent-flex {
         display: flex;
       }
-      .child-flex {
-        background-color: rgb(218, 130, 151);
-        margin: 30px;
-        padding: 10px;
-        text-align: justify;
-      }
+      
       .para-1{
         display: flex;
         align-items: center;
       }
+
+
+
+.about-section {
+  display:flex;
+  justify-content: center;
+  padding: 80px;
+ 
+}
+
+.about-box {
+  position: relative;
+  width:100%;
+  max-width:1400px;
+  height:fit-content;
+  overflow: hidden;
+}
+
+.about-bg {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.about-content{
+  position: absolute;
+  inset:0;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  height: 100%;
+}
+
+      .about-text {
+        width: 550px;
+        max-width: 300px;
+height: 650px;
+        overflow: hidden;
+        color: black;
+        padding: 10;
+       
+        font-size: 15px;
+        line-height:1;
+      background: rgba(255,255,255,0.3);
+
+
+      align-self: center;
+      display: flex;
+     
+      }
+
+  
     </style>
   </head>
   <body>
@@ -93,22 +138,28 @@ Select ONE Additional Feature to Add
    
    
    
-    <div id="horizontal-photo-div">
-      <div class="image">
+    <div class="about-section fade-in">
 
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-       <img class="fade-in" src="images/photoon6s.jpeg" width="700
+<div class="about-box">
+
+  <img src="images/IMG_4810.jpeg" class="about-bg">
+
+      <div class="about-content">
+    
+       <img class="fade-in" src="images/photoon6s.jpeg"  width="700
       ">
+     
+
+      <div class="about-text fade-in">
+        <h1>
+          Helloo, I'm Viki Insomnia, a visual artist based in New York City.
+          I view my work as a visual and physical manifestation of who I am and who I aspire to become.
+          As I continue to grow as an artist, I hope to expand my art beyond paintings by exploring filmmaking, and clothing design. I am interested in how different creative aspects can connect with one another and create new way of expressing my ideas.
+        </h1>
       </div>
-      <div class="child-flex">
-        <p>
-          artffffefrhdfggdfffffffffffffffffffffffffffff
-        </p>
       </div>
     </div>
       </div>
-    </div>
 
 
    <script>
